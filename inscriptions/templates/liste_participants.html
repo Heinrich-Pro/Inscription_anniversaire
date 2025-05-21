@@ -1,0 +1,32 @@
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Liste des participants</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Anniversaire</h2>
+        <nav class="navigation">
+            <button class="bthLogin-popup">Participants</button>
+        </nav>
+    </header>
+    <div class="wrapper active-popup">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box participants">
+            <h2>Participants inscrits</h2>
+            <ul>
+                {% for participant in participants %}
+                    <li>{{ participant.nom }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

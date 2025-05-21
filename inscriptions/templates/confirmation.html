@@ -1,0 +1,29 @@
+{% load static %}
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Confirmation d'inscription</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h2 class="logo">Anniversaire</h2>
+        <nav class="navigation">
+            <button class="bthLogin-popup">Confirmation</button>
+        </nav>
+    </header>
+    <div class="wrapper active-popup">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box confirmation">
+            <h2>Confirmation</h2>
+            <p>Merci pour votre inscription !</p>
+            <p>Un e-mail de confirmation va vous etre envoyer.</p>
+        </div>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

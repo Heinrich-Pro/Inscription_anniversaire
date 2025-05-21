@@ -1,0 +1,15 @@
+Bonjour {{ participant.nom }},
+
+Merci de vous être inscrit à mon anniversaire !
+
+**Détails de l'événement :**
+
+- **Date :** 14 mai 2025
+- **Heure :** 14h00
+- **Lieu :** AKANDA (Giji), a Saint-christophe
+
+Nous avons hâte de vous voir !
+
+Cordialement,
+
+L'équipe d'organisation
