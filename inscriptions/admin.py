@@ -5,6 +5,7 @@ from django.template.loader import render_to_string
 from django.http import HttpResponseRedirect
 from django.urls import path
 from .models import Participant
+from django.urls import reverse
 
 @admin.register(Participant)
 class ParticipantAdmin(admin.ModelAdmin):
